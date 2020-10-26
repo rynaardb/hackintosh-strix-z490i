@@ -1,4 +1,9 @@
-# Hackintosh - Asus ROG Strix Z490-I Gaming
+# Hackintosh - Asus ROG Strix Z490-I Gaming (OpenCore)
+
+[![macOS](https://img.shields.io/badge/macOS-10.15.7-orange)](https://www.apple.com/macos/catalina/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.2-yellowgreen)](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.2)
+[![MODEL](https://img.shields.io/badge/Model-Z490I-blue)](https://www.asus.com/Motherboards/ROG-STRIX-Z490-I-GAMING/)
+[![BIOS](https://img.shields.io/badge/BIOS-0707-brightgreen)](#)
 
 This repository is about hackintosh on **Asus ROG Strix Z490-I Gaming** using Intel's 10th Gen processors(Comet Lake). For now, all the hardware is working as expected, it's ready for daily usage and I will continue to follow the updates of OpenCore and macOS.
 
