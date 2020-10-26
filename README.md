@@ -1,15 +1,19 @@
 # Hackintosh - Asus ROG Strix Z490-I Gaming (OpenCore)
 
-[![macOS](https://img.shields.io/badge/macOS-10.15.7-orange)](https://www.apple.com/macos/catalina/)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.2-yellowgreen)](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.2)
+[![macOS](https://img.shields.io/badge/macOS-10.15.7-orange)](https://www.apple.com/macos/catalina/)
 [![MODEL](https://img.shields.io/badge/Model-Z490I-blue)](https://www.asus.com/Motherboards/ROG-STRIX-Z490-I-GAMING/)
 [![BIOS](https://img.shields.io/badge/BIOS-0707-brightgreen)](#)
 
-This repository is about hackintosh on **Asus ROG Strix Z490-I Gaming** using Intel's 10th Gen processors(Comet Lake). For now, all the hardware is working as expected, it's ready for daily usage and I will continue to follow the updates of OpenCore and macOS.
+This repository is for Hackintosh builds with the **Asus ROG Strix Z490-I Gaming** motherboard using Intel's 10th Gen processors (Comet Lake). 
 
-Anyone who has the same board can use my EFI directly. The source EFI folder uses debug version of OpenCore, mainly used for installation and testing. It’s recommended to use the release version for daily usage, you can replace it yourself or just download my release. Either way, don’t forget to edit the `EFI/OC/config.plist` file, you should generate your own SMBIOS info by following the [Comet Lake Config Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#platforminfo). 
+Everything in terms of the hardware used in this build is working as expected.
 
-Highly recommended reading the whole [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) before you start.
+Anyone who has the same motherboard can use the EFI of this repository. 
+
+Don’t forget to edit the `EFI/OC/config.plist` file and to generate your own SMBIOS info. See: [Comet Lake Config Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#platforminfo) for detailed instructions on how to do that. 
+
+I highly recommended that you read the [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) before you get started.
 
 ## Hardware
 
@@ -46,9 +50,9 @@ Highly recommended reading the whole [OpenCore Install Guide](https://dortania.g
 
 #### Intel UHD630
 
-HDMI/DP display and audio output are working fine.
+HDMI/DP display and audio outputs are all working.
 
-Working by:
+Working with:
 
 * ig-platform-id = `07009B3E`
 * device-id = `9B3E0000`
@@ -71,11 +75,11 @@ DeviceProperties:
 
 #### AMD Vega 64
 
-Native support, no additional configuration.
+Native support, no additional configuration required.
 
 ### Audio
 
-Working by:
+Working with:
 
 * AppleALC.kext
 * FakePCIID.kext
@@ -97,7 +101,7 @@ DeviceProperties:
 
 ### Ethernet 
 
-Working by:
+Working with:
 
 * FakePCIID.kext
 * FakePCIID_Intel_I225-V.kext
@@ -117,11 +121,9 @@ DeviceProperties:
 
 ### Wi-Fi/BT
 
-Working by using an m.2 M-Key adapter with Apple Airport Card BCM94360NG.
+Working by using an m.2 M-Key adapter and Apple Airport Card (BCM94360NG).
 
-> No additional kexts required when using the BCM94360NG.
-
-Wi-Fi works by default and no additional configurations required.
+> Wi-Fi works by default. No additional kexts required when using the BCM94360NG card.
 
 Working with this card is:
 
@@ -131,14 +133,14 @@ Working with this card is:
 - [x] Apple Watch unlock
 - [x] Apple Magic Keyboard & Mouse
 
-The bottom side m.2 slot for SSD on the motherboard is occupied and the bottom SSD heat sink must be abandoned.
+The bottom m.2 slot for the SSD on the motherboard is occupied with the BCM94360NG and the heat sink needs to be removed.
 
-Bluetooth does not work by default. It uses the onboard 9-pin USB2.0 port (HS11) to power the Bluetooth module. USB Port mapping is required to fix this (see "USB Ports" section).
+Bluetooth does not work by default. It uses the onboard 9-pin USB2.0 port (HS11) to power the Bluetooth module. USB Port mapping is required to fix this (see the "USB" section).
 
 <img src="assets/wifi-bt.png" width="500" alt="wifi-bt"/>
 
 
-> The onboard wireless network card Intel AX201NGW uses m.2 E-Key slot and CNVi protocol. I tried to replace it with an m.2 A-Key BCM94352Z card, the slot is compatible but it didn't work even in windows, thanks to the CNVi thing 😓. So don't try to replace the onboard card.
+> The onboard wireless network card (Intel AX201NGW) uses the m.2 E-Key slot and CNVi protocol. Replacing the card with the BCM94360NG does not work due to the CNVi protocol, so don't even bother trying.
 
 
 ### USB
@@ -168,14 +170,16 @@ USB Ports:
 >
 > HS02: AURA LED Controller /  HS14: Onboard bluetooth
 >
-> SS04, HS01/SS01, HS07/SS07, HS08/SS08 are not tested yet.
+> SS04, HS01/SS01, HS07/SS07, HS08/SS08 not yet tested.
 
 
-You will need to create your own USB mappings using Hackintool, here's mine:
+You will need to create your own USB mappings using Hackintool.
+
+Example of my own USB Port mappings:
 
 <img src="assets/usb-ports.png" width="500" alt="usb-ports"/>
 
- **Important note regarding the USB mapping for the internal usb header (HS11) needed to power the Bluetooh module on the BCM94360NG:**
+ **Important note regarding the USB port mapping for the internal usb header (HS11) needed to power the Bluetooh module on the BCM94360NG:**
 
 If for some reason (as was the case for me) you don't see HS11 shown in Hackintool you will need to add it manually. **Without the correct HS11 mapping Bluetooth will not work correctly.**
 
@@ -203,7 +207,7 @@ If for some reason (as was the case for me) you don't see HS11 shown in Hackinto
 
 ### Sleep/Wake
 
-Works with DP output and power button. GPRW Patch is used to disabling the USB device instant wake.
+Works with DP output and power button. GPRW Patch is used to disable the USB device instant wake.
 
 **Known issues:**
 1. Bluetooth has a delay of about 7 seconds after the display is turned on.
