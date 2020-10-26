@@ -241,11 +241,11 @@ Add patch to `Kernel -> Patch`:
 </dict>
 ```
 
-### BIOS
+### BIOS Settings
 
 > Version: 0707
 
-#### Disable
+#### ❌ Disable
 
 * Fast Boot
 * VT-d
@@ -253,7 +253,7 @@ Add patch to `Kernel -> Patch`:
 * Intel SGX
 * CFG Lock (no option in BIOS, Asus Z490 motherboards are factory unlocked. The `AppleCpuPmCfgLock` and `AppleXcpmCfgLock` quirks are not necessary)
 
-#### Enable
+#### ✅ Enable
 
 * VT-x (no option in BIOS, it's enabled by default)
 * Above 4G decoding
