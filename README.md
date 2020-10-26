@@ -163,6 +163,30 @@ You will need to create your own USB mappings using Hackintool, here's mine:
 
 <img src="assets/usb-ports.png" width="500" alt="usb-ports"/>
 
+ **Important note regarding creating USB mappings:**
+
+If for some reason (as was the case for me) you don't see HS11 shown in Hackintool you will need to manually add it.
+
+1. Create your USB mappings and export it using Hackintool.
+
+2. Open the exported USBPorts.kext by right clicking on it and select "Show Package Contents. Next, open Contents/info.plist using any text editor.
+
+3. In your text editor search for the text `HS10` and add the following entry right below </dict> of the H10 key:
+
+```xml
+<key>HS11</key>
+<dict>
+	<key>UsbConnector</key>
+	<integer>0</integer>
+	<key>name</key>
+	<string>HS11</string>
+	<key>port</key>
+	<data>CwAAAA==</data>
+</dict>
+```
+
+4. Save and close USBPorts.kext.
+
 ### Sleep/Wake
 
 Works with DP output and power button. GPRW Patch is used to disabling the USB device instant wake.
