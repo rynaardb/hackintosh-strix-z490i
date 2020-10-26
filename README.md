@@ -165,7 +165,7 @@ You will need to create your own USB mappings using Hackintool, here's mine:
 
  **Important note regarding creating USB mappings:**
 
-If for some reason (as was the case for me) you don't see HS11 shown in Hackintool you will need to manually add it.
+If for some reason (as was the case for me) you don't see HS11 shown in Hackintool you will need to add it manually.
 
 1. Create your USB mappings and export it using Hackintool.
 
