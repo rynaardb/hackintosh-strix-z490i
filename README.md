@@ -119,6 +119,10 @@ DeviceProperties:
 
 Working by using an m.2 M-Key adapter with Apple Airport Card BCM94360NG.
 
+> No additional kexts required when using the BCM94360NG.
+
+Wi-Fi works by default and no additional steps are required.
+
 Working with this card is:
 
 - [x] Airdrop
@@ -129,7 +133,7 @@ Working with this card is:
 
 The bottom side m.2 slot for SSD on the motherboard is occupied and the bottom SSD heat sink must be abandoned.
 
-The Bluetooth can not be recognized by default, it uses the onboard 9-pin USB2.0 port (HS11) for power supply, so USB mapping should be fixed to make it work.
+Bluetooth does not work by default. It uses the onboard 9-pin USB2.0 port (HS11) to power the Bluetooth module. USB Port mapping is required to fix this (see "USB Ports" section).
 
 <img src="assets/wifi-bt.png" width="500" alt="wifi-bt"/>
 
