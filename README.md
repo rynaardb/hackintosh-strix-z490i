@@ -1,0 +1,1 @@
+# hackintosh-strix-z490i
