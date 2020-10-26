@@ -117,11 +117,19 @@ DeviceProperties:
 
 ### Wi-Fi/BT
 
-Working by using an m.2 M-Key adapter with Apple Airport Card BCM94360NG. It's natively supported, airdrop, handoff, Apple Watch unlock, and sidecar are all working perfectly. 
+Working by using an m.2 M-Key adapter with Apple Airport Card BCM94360NG.
 
-The bottom side m.2 slot for SSD is occupied and the bottom SSD heat sink must be abandoned.
+Working with this card is:
 
-The Bluetooth can not be recognized by default, it uses the onboard 9-pin USB2.0 port for power supply, so USB mapping should be fixed to make it work.
+- [x] Airdrop
+- [x] Handoff
+- [x] Sidecar
+- [x] Apple Watch unlock
+- [x] Apple Magic Keyboard & Mouse
+
+The bottom side m.2 slot for SSD on the motherboard is occupied and the bottom SSD heat sink must be abandoned.
+
+The Bluetooth can not be recognized by default, it uses the onboard 9-pin USB2.0 port (HS11) for power supply, so USB mapping should be fixed to make it work.
 
 <img src="assets/wifi-bt.png" width="500" alt="wifi-bt"/>
 
@@ -163,9 +171,9 @@ You will need to create your own USB mappings using Hackintool, here's mine:
 
 <img src="assets/usb-ports.png" width="500" alt="usb-ports"/>
 
- **Important note regarding creating USB mappings:**
+ **Important note regarding the USB mapping for the internal usb header (HS11) needed to power the Bluetooh module on the BCM94360NG:**
 
-If for some reason (as was the case for me) you don't see HS11 shown in Hackintool you will need to add it manually.
+If for some reason (as was the case for me) you don't see HS11 shown in Hackintool you will need to add it manually. **Without the correct HS11 mapping Bluetooth will not work correctly.**
 
 1. Create your USB mappings and export it using Hackintool.
 
@@ -173,7 +181,7 @@ If for some reason (as was the case for me) you don't see HS11 shown in Hackinto
 
 3. Open Contents/info.plist using any text editor.
 
-4. In your text editor search for the text `HS10` and add the following entry right below </dict> of the H10 key:
+4. In your text editor search for the text "HS10" and add the following entry right below </dict> of the H10 key:
 
 ```xml
 <key>HS11</key>
