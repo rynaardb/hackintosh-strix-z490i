@@ -289,6 +289,7 @@ The installation guide in the [OpenCore Install Guide](https://dortania.github.i
 <img src="assets/iGPU.png" width="500" alt="iGPU"/>
 <!-- <img src="assets/dGPU.png" width="500" alt="dGPU"/> -->
 <img src="assets/IPG-Maximum-Frequency-test.png" width="500" alt="cpu-test"/>
+<img src="assets/blackmagic-speeds.png" width="500" alt="cpu-test"/>
 
 ## Credits
 
