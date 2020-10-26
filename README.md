@@ -112,7 +112,9 @@ DeviceProperties:
 
 ### Wi-Fi/BT
 
-Working by using an m.2 M-Key adapter with Apple Airport Card BCM94360NG. It's natively supported, airdrop, handoff, and sidecar are working perfectly. The bottom side m.2 slot for SSD is occupied and the bottom SSD heat sink must be abandoned.
+Working by using an m.2 M-Key adapter with Apple Airport Card BCM94360NG. It's natively supported, airdrop, handoff, Apple Watch unlock, and sidecar are all working perfectly. 
+
+The bottom side m.2 slot for SSD is occupied and the bottom SSD heat sink must be abandoned.
 
 The Bluetooth can not be recognized by default, it uses the onboard 9-pin USB2.0 port for power supply, so USB mapping should be fixed to make it work.
 
@@ -268,13 +270,14 @@ The installation guide in the [OpenCore Install Guide](https://dortania.github.i
 * [PropereTree](https://github.com/corpnewt/ProperTree) for editing plist file
 * [SSDTTime](https://github.com/corpnewt/SSDTTime) for dumping DSDT
 
-### Benchmarks
+<!-- TODO -->
+<!-- ### Benchmarks
 
 | Item | Score |
 |---|---|
 | CPU - Geekbench | [Single / Multi-Core](https://browser.geekbench.com/v5/cpu/2750529): 1218 / 8909 |
 | Intel UHD630 - Geekbench | [OpenCL](https://browser.geekbench.com/v5/compute/1092240) / [Metal](https://browser.geekbench.com/v5/compute/1120839): 4826 / 4790 |
-| AMD Radeon VII - Geekbench | [OpenCL](https://browser.geekbench.com/v5/compute/1121010) / [Metal](https://browser.geekbench.com/v5/compute/1121020): 75925 / 85089 |
+| AMD Vega 64 - Geekbench | [OpenCL](https://browser.geekbench.com/v5/compute/1121010) / [Metal](https://browser.geekbench.com/v5/compute/1121020): 75925 / 85089 | -->
 
 ### Screenshots
 
