@@ -181,7 +181,7 @@ Example of my own USB Port mappings:
 
  **Important note regarding the USB port mapping for the internal usb header (HS11) needed to power the Bluetooh module on the BCM94360NG:**
 
-If for some reason (as was the case for me) you don't see HS11 shown in Hackintool you will need to add it manually. **Without the correct HS11 mapping Bluetooth will not work correctly.**
+If for some reason (as was the case for me) you don't see HS11 shown in Hackintool you will need to add it manually. **Without the correct HS11 USB port mapping Bluetooth will not work correctly.**
 
 1. Create your USB mappings and export it using Hackintool.
 
