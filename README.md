@@ -314,7 +314,7 @@ The installation guide in the [OpenCore Install Guide](https://dortania.github.i
 * [Hackintool](https://github.com/headkaze/Hackintool) for a lot of things
 * [MaciASL](https://github.com/acidanthera/MaciASL) for compiling SSDTs
 * [MountEFI](https://github.com/corpnewt/MountEFI) for mounting EFI system partition
-* [PropereTree](https://github.com/corpnewt/ProperTree) for editing plist file
+* [ProperTree](https://github.com/corpnewt/ProperTree) for editing plist file
 * [SSDTTime](https://github.com/corpnewt/SSDTTime) for dumping DSDT
 
 <!-- TODO -->
