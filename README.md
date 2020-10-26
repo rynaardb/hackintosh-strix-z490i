@@ -121,7 +121,7 @@ Working by using an m.2 M-Key adapter with Apple Airport Card BCM94360NG.
 
 > No additional kexts required when using the BCM94360NG.
 
-Wi-Fi works by default and no additional steps are required.
+Wi-Fi works by default and no additional configurations required.
 
 Working with this card is:
 
