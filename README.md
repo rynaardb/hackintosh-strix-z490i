@@ -10,7 +10,7 @@ Highly recommended reading the whole [OpenCore Install Guide](https://dortania.g
 
 * Motherboard: Asus ROG STRIX Z490-I
     * Ethernet: Intel I225-V 2.5Gbit
-    * Wi-Fi/BT: Intel AX201NGW
+    * Wi-Fi/BT: Intel AX201NGW (not used in macOS)
     * Audio: Realtek ALCS1220A
 * CPU: Intel i9-10900K
 * GPU: Intel UHD630 / AMD Vega 64
@@ -26,7 +26,7 @@ Highly recommended reading the whole [OpenCore Install Guide](https://dortania.g
 ## What's working
 
 - [x] Intel UHD630 (iGPU)
-- [x] AMD Radeon VII (dGPU)
+- [x] AMD Vega 64 (dGPU)
 - [x] Audio Realtek ALCS1220A
 - [x] Intel I225-V 2.5Gb Ethernet
 - [x] Wi-Fi/BT (BCM94360NG)
