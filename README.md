@@ -308,7 +308,7 @@ All kexts with a version tag are downloaded from original repositories.
 
 The installation guide in the [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) are quite clear and easy, so there will be no detailed installation tutorials here. Give it some patience and you can build your own EFI.
 
-### Tools
+### Required Tools/Utilities
 
 * [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) for generating SMBIOS info
 * [Hackintool](https://github.com/headkaze/Hackintool) for a lot of things
