@@ -169,9 +169,11 @@ If for some reason (as was the case for me) you don't see HS11 shown in Hackinto
 
 1. Create your USB mappings and export it using Hackintool.
 
-2. Open the exported USBPorts.kext by right clicking on it and select "Show Package Contents. Next, open Contents/info.plist using any text editor.
+2. Open the exported USBPorts.kext by right clicking on it and select "Show Package Contents
 
-3. In your text editor search for the text `HS10` and add the following entry right below </dict> of the H10 key:
+3. Open Contents/info.plist using any text editor.
+
+4. In your text editor search for the text `HS10` and add the following entry right below </dict> of the H10 key:
 
 ```xml
 <key>HS11</key>
@@ -185,7 +187,7 @@ If for some reason (as was the case for me) you don't see HS11 shown in Hackinto
 </dict>
 ```
 
-4. Save and close USBPorts.kext.
+5. Save and close USBPorts.kext.
 
 ### Sleep/Wake
 
