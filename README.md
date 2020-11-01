@@ -73,9 +73,9 @@ DeviceProperties:
 </dict>
 ```
 
-#### AMD Vega 64
+#### AMD RX 5700 XT
 
-Native support, no additional configuration required.
+Native support but you requires the `agdpmod=pikera` boot argument.
 
 ### Audio
 
