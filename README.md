@@ -17,15 +17,15 @@ I highly recommended that you read the [OpenCore Install Guide](https://dortania
 
 ## Hardware
 
-* Motherboard: [Asus ROG Strix Z490-I Gaming](https://www.asus.com/Motherboards/ROG-STRIX-Z490-I-GAMING/)
-    * Ethernet: Intel I225-V 2.5Gbit
-    * Wi-Fi/BT: Intel AX201NGW (not used in macOS)
-    * Audio: Realtek ALCS1220A
-* CPU: [Intel Core i9-10900K](https://ark.intel.com/content/www/us/en/ark/products/199332/intel-core-i9-10900k-processor-20m-cache-up-to-5-30-ghz.html)
-* GPU: Intel UHD630 (integrated) / AMD RX 5700 XT (descrete)
-* RAM: [Crucial Ballistix DDR4 3200 64GB(32GB×2)](https://www.crucial.com/memory/ddr4/bl2k32g32c16u4bl)
-* SSD: [Samsung 970 EVO Plus 2TB M.2 NVMe](https://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-970-evo-plus-nvme-m-2-2-tb-mz-v7s2t0b-am/)
-* WIFI/BT: [BCM94360NG](https://www.amazon.com/Hackintosh-M-2-NGFF-BCM94360NG-Continuity/dp/B083YXS7VF/ref=sr_1_2?dchild=1&keywords=BCM94360NG&qid=1603741334&sr=8-2) + [NGFF M.2 KEY M to KEY A+E KEY E Adapter](http://www.hwtools.net/Adapter/M2E.html)
+* **Motherboard:** [Asus ROG Strix Z490-I Gaming](https://www.asus.com/Motherboards/ROG-STRIX-Z490-I-GAMING/)
+    * **Ethernet:** Intel I225-V 2.5Gbit
+    * **Wi-Fi/BT:** Intel AX201NGW (not used in macOS)
+    * **Audio:** Realtek ALCS1220A
+* **CPU:** [Intel Core i9-10900K](https://ark.intel.com/content/www/us/en/ark/products/199332/intel-core-i9-10900k-processor-20m-cache-up-to-5-30-ghz.html)
+* **GPU:** Intel UHD630 (integrated) / AMD RX 5700 XT (descrete)
+* **RAM:** [Crucial Ballistix DDR4 3200 64GB(32GB×2)](https://www.crucial.com/memory/ddr4/bl2k32g32c16u4bl)
+* **SSD:** [Samsung 970 EVO Plus 2TB M.2 NVMe](https://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-970-evo-plus-nvme-m-2-2-tb-mz-v7s2t0b-am/)
+* **WIFI/BT:** [BCM94360NG](https://www.amazon.com/Hackintosh-M-2-NGFF-BCM94360NG-Continuity/dp/B083YXS7VF/ref=sr_1_2?dchild=1&keywords=BCM94360NG&qid=1603741334&sr=8-2) + [NGFF M.2 KEY M to KEY A+E KEY E Adapter](http://www.hwtools.net/Adapter/M2E.html)
 
 ## Software
 
